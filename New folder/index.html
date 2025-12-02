@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Solo Business — Cloudflare Full Build</title>
+  <meta name="description" content="A near-production Cloudflare-first single-person business automation starter kit.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="text-xl font-semibold">AI Solo Business</a>
+      <nav class="space-x-4 text-sm">
+        <a href="/products.html" class="hover:underline">Products</a>
+        <a href="/support.html" class="hover:underline">Support</a>
+        <a href="/admin.html" class="hover:underline">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <section>
+        <h1 class="text-4xl font-extrabold leading-tight">Automate 90% of your solo business on Cloudflare</h1>
+        <p class="mt-4 text-lg text-gray-600">Edge-first architecture using Cloudflare Pages, Workers, Queues, KV, D1 and R2. Includes AI orchestration stubs, secure support workflow, observability hooks and deploy-ready config.</p>
+        <ul class="mt-6 space-y-2 text-gray-700">
+          <li>• Edge orchestration via Workers & Queues</li>
+          <li>• Static front-end hosted on Pages</li>
+          <li>• Support widget with KB fallback</li>
+          <li>• Sample CI for Pages deployment</li>
+        </ul>
+        <div class="mt-8 flex space-x-4">
+          <a href="/products.html" class="px-5 py-3 bg-indigo-600 text-white rounded-md shadow hover:bg-indigo-700">View Products</a>
+          <a href="/support.html" class="px-5 py-3 border border-gray-200 rounded-md hover:bg-gray-100">Get Support</a>
+        </div>
+      </section>
+
+      <aside class="bg-white border rounded-lg p-6 shadow">
+        <h3 class="font-semibold">Quick Start</h3>
+        <ol class="mt-3 text-sm text-gray-700 list-decimal ml-5 space-y-2">
+          <li>Create a Cloudflare Pages site and connect this repo.</li>
+          <li>Provision R2, Workers, KV, D1, and Queues (free tier has limitations).</li>
+          <li>Deploy with Wrangler and set secrets (API keys).</li>
+        </ol>
+        <a href="/README.md" class="mt-4 inline-block text-sm text-indigo-600 hover:underline">Open README & Deploy Guide</a>
+      </aside>
+    </div>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold">Features included</h2>
+      <div class="mt-4 grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h4 class="font-semibold">Content Pipeline</h4>
+          <p class="text-sm text-gray-600 mt-2">Producer + Queue consumer pattern with R2 storage for artifacts.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h4 class="font-semibold">Support KB</h4>
+          <p class="text-sm text-gray-600 mt-2">KV-backed knowledge base; support endpoint with human-escalation queue.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h4 class="font-semibold">Observability</h4>
+          <p class="text-sm text-gray-600 mt-2">Synthetic checks, queue monitoring and logpush-ready events.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-gray-500">
+      © AI Solo Business • Designed for Cloudflare deployment
+    </div>
+  </footer>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

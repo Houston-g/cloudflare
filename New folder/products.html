@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — AI Solo Business</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold">AI Solo Business</a>
+      <nav class="space-x-4 text-sm">
+        <a href="/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 class="text-3xl font-bold">Products</h1>
+    <p class="mt-3 text-gray-600">No real products — this page demonstrates product listing and checkout hooks.</p>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <article class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold">Starter Course</h3>
+        <p class="text-sm text-gray-600 mt-2">A sample digital product shipped via R2 with license key generation.</p>
+        <div class="mt-4">
+          <button class="buy-btn px-4 py-2 bg-indigo-600 text-white rounded" data-sku="starter-course">Buy — $49</button>
+        </div>
+      </article>
+
+      <article class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold">Automation Scripts Pack</h3>
+        <p class="text-sm text-gray-600 mt-2">Worker scripts + wrangler config to bootstrap automations.</p>
+        <div class="mt-4">
+          <button class="buy-btn px-4 py-2 bg-indigo-600 text-white rounded" data-sku="scripts-pack">Buy — $199</button>
+        </div>
+      </article>
+    </div>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

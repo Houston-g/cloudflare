@@ -1,0 +1,21 @@
+name = "ai-solo-business"
+main = "./workers/ai_orchestrator.js"
+compatibility_date = "2025-12-01"
+
+# Example kv namespace (set ids after creating them)
+kv_namespaces = [
+  { binding = "KB", id = "REPLACE_KV_ID" }
+]
+
+# Queues (if using Workers for queues)
+[[queues]]
+binding = "CONTENT_QUEUE"
+queue_name = "content-jobs"
+
+# R2 binding
+[[r2_buckets]]
+binding = "ARTIFACTS_BUCKET"
+bucket_name = "artifacts"
+
+# D1 binding example
+# d1_databases = [{ binding = "DB", database_name = "ai_db" }]
